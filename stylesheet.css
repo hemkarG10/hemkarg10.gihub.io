@@ -1,0 +1,212 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Main title styling using ID selector */
+#main-title {
+    font-size: 3rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Class for subtitle styling */
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Header section styling */
+.header-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem; /* Box model: padding */
+    text-align: center;
+    margin-bottom: 2rem; /* Box model: margin */
+}
+
+/* Contact info styling */
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+/* Link styling with hover effect */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c; /* Color change on hover */
+    text-decoration: underline;
+}
+
+/* Header section links (white color) */
+.header-section a {
+    color: white;
+    font-weight: bold;
+}
+
+.header-section a:hover {
+    color: #f39c12;
+}
+
+/* Section styling - applies to multiple sections */
+.about-section,
+.experience-section,
+.education-section,
+.skills-section,
+.interests-section {
+    background: white;
+    margin: 2rem auto;
+    padding: 2.5rem; /* Box model: padding */
+    border-radius: 10px; /* Box model: border-radius */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 1000px;
+}
+
+/* Section headers */
+h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Profile image styling */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: right;
+    margin: 0 0 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Job entry styling */
+.job-entry {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.job-duration {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Achievement list styling */
+.achievement-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievement-list li {
+    background: #ecf0f1;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+
+/* Education entry styling */
+.education-entry {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Skills grid styling */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+}
+
+/* Footer section */
+.footer-section {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #main-title {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    .header-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-section,
+    .experience-section,
+    .education-section,
+    .skills-section,
+    .interests-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
