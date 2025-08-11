@@ -44,6 +44,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', updateActiveNav);
+    
+    // Update title bar based on scroll position
+    function updateTitleBar() {
+        const homeSection = document.querySelector('#home');
+        const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+        const scrollPos = window.scrollY;
+        
+        if (scrollPos > homeBottom - 100) {
+            // Scrolled away from home section - show only name
+            document.title = 'Hemkar Goswami';
+        } else {
+            // In home section - show full title
+            document.title = 'Hemkar Goswami - Portfolio';
+        }
+    }
+    
+    window.addEventListener('scroll', updateTitleBar);
 });
 
 
